@@ -1,0 +1,39 @@
+# Title: Perflyst's SmartTV Blocklist for Pi-hole - RegEx extension
+# Version (at time of pull): 02October2021v1
+# Edited (by user): 28March2022
+
+# LG
+(^|\.)ibs\.lgappstv\.com
+(^|\.)lgsmartad\.com
+(^|\.)smartshare\.lgtvsdp\.com
+(^|\.)rdx2\.lgtvsdp\.com
+^[a-z]{11,15}$
+
+# SAMSUNG
+(^|\.)giraffic\.com$
+(^|\.)internetat\.tv$
+(^|\.)pavv\.co\.kr$
+
+(^|\.)samsungrm\.net$
+
+# (^|\.)samsungelectronics\.com$
+
+# prevents updates
+# (^|\.)samsungcloudcdn\.com$
+# (^|\.)samsungotn\.net$
+
+# prevents internet
+# (^|\.)samsungcloudsolution\.com$
+
+# blocks time domain
+# (^|\.)samsungcloudsolution\.net$
+
+# VIZIO
+(\.|^)tvinteractive\.tv$
+
+# Other
+
+# can produce false positives, rather block individual domains
+# (^|\.)myhomescreen\.tv$
+
+^api\..*\.hismarttv\.com$
